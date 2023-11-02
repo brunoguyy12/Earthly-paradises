@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Welcome to Earthly Paradises</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat&family=Open+Sans&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="icon" href="images/download.png">
+        <script src="bootstrap.bundle.js"></script>       
+    </head>
+    <body>
+        <header class="headername container-fluid">
+            <div class="pName">
+                <span class="word1">Earthly</span><br>
+                <span class="word2">Paradises</span>
+            </div>
+            <img class="logo" src="images/logo.png" alt="logo">
+            <div class="navbar-list">
+                <div class="navbar1">
+                    <a href="index.html" class="nav-items">Home</a>
+                    <a href="places2.html" class="nav-items">Places</a>
+                    <a class="nav-items active userIn">
+                        <i class="bi bi-person-circle userPic"></i> 
+                    </a>
+                </div>                 
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-6">
+                <div id="card-slider1" class="carousel slide eventDisplay" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <h3 class="eventName">Traditional Events</h3>
+                        <div class="carousel-item active">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/Traditional1.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Koamboka Ceremony</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/Traditional2.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Bujumbura Drummers</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/Traditional3.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Likumbi Masquerades</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/Traditional4.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Gishora Drums</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/Traditional5.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Ancestral Spirits Masquerades</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="centerRegisterButton">
+                        <div class="registerButton" id="myRegisterB1" onclick="f1()">Register</div>
+                    </div>
+                    <div class="showRegister" id="showRegister1">
+                        <h4>Registered</h4>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#card-slider1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#card-slider1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+            </div>
+            <div class="col-6">
+                <div id="card-slider2" class="carousel slide eventDisplay" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <h3 class="eventName">Lake Events</h3>  
+                        <div class="carousel-item active" >                          
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/lake1.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Nyanza Lake</h1>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/lake2.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Luangwa Valley</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/lake3.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Rumonge Lake</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/lake4.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Kariba Dam</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/lake5.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Bujumbura Tanganyika</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="centerRegisterButton">
+                        <div class="registerButton" id="myRegisterB2" onclick="f2()">Register</div>
+                    </div>
+                    <div class="showRegister" id="showRegister2">
+                        <h4>Registered</h4>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#card-slider2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#card-slider2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div id="card-slider3" class="carousel slide eventDisplay" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <h3 class="eventName">WildLife Falls</h3>
+                        <div class="carousel-item active">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/wildlife1.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Rusizi River Hippopotamus</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/wildlife2.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Kafue National Park</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/wildlife3.jpeg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">North Lakes Birds</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/wildlife4.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Muso Otunya National Park</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/wildlife5.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Ruvubu National Park</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="centerRegisterButton">
+                        <div class="registerButton" id="myRegisterB3" onclick="f3()">Register</div>
+                    </div>
+                    <div class="showRegister" id="showRegister3">
+                        <h4>Registered</h4>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#card-slider3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#card-slider3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+            </div>
+            <div class="col-6">
+                <div id="card-slider4" class="carousel slide eventDisplay" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <h3 class="eventName">WaterFalls Events</h3>  
+                        <div class="carousel-item active" >                          
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/falls1.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Lumangwe WaterFalls</h1>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/falls2.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Gasumo WaterFalls</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/falls3.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Kalambo Falls</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/falls4.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Nyakai Falls</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card eachCard">
+                                <img src="images/Earthly_Paradises/falls5.jpg" class="card-img-top d-block w-100">
+                                <div class="card-body">
+                                    <h1 class="card-title">Victoria Falls</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="centerRegisterButton">
+                        <div class="registerButton" id="myRegisterB4" onclick="f4()">Register</div>
+                    </div>
+                    <div class="showRegister" id="showRegister4">
+                        <h4>Registered</h4>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#card-slider4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#card-slider4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+            </div>
+        </div>
+        <div class="centerFooter">
+            <footer>
+                <img src="images/download.png" alt="logo">
+                <h3 class="siteName">Earthly Paradises</h3>    
+            </footer>
+        </div>
+    </body>
+    <script>
+        
+        function f1(){
+            var d = document.getElementById("myRegisterB1");
+            var d1=document.getElementById("showRegister1");
+            if(d1.style.display=="none"){
+                d.innerHTML="Cancel";
+                d.style.backgroundColor = "Red";
+                d1.style.display="block";
+            }
+            else{
+                d.innerHTML="Register";
+                d.style.backgroundColor = "rgba(78, 214, 40, 0.963)";
+                d1.style.display="none";
+            }
+        }
+        function f2(){
+            var d = document.getElementById("myRegisterB2");
+            var d1=document.getElementById("showRegister2");
+            if(d1.style.display=="none"){
+                d.innerHTML="Cancel";
+                d.style.backgroundColor = "Red";
+                d1.style.display="block";
+            }
+            else{
+                d.innerHTML="Register";
+                d.style.backgroundColor = "rgba(78, 214, 40, 0.963)";
+                d1.style.display="none";
+            }
+        }
+        function f3(){
+            var d = document.getElementById("myRegisterB3");
+            var d1=document.getElementById("showRegister3");
+            if(d1.style.display=="none"){
+                d.innerHTML="Cancel";
+                d.style.backgroundColor = "Red";
+                d1.style.display="block";
+            }
+            else{
+                d.innerHTML="Register";
+                d.style.backgroundColor = "rgba(78, 214, 40, 0.963)";
+                d1.style.display="none";
+            }
+        }
+        function f4(){
+            var d = document.getElementById("myRegisterB4");
+            var d1=document.getElementById("showRegister4");
+            if(d1.style.display=="none"){
+                d.innerHTML="Cancel";
+                d.style.backgroundColor = "Red";
+                d.style.position="sticky";
+                d.style.top="0";
+                d1.style.display="block";
+            }
+            else{
+                d.innerHTML="Register";
+                d.style.backgroundColor = "rgba(78, 214, 40, 0.963)";
+                d1.style.display="none";
+            }
+        }
+    </script>
+</html>
+

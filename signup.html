@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up - Earthly Paradises</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat&family=Open+Sans&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="icon" href="images/download.png">
+        <script src="bootstrap.bundle.js"></script>
+    </head>
+    <body>
+        <header class="headername container-fluid">
+            <div class="pName">
+                <span class="word1">Earthly</span><br>
+                <span class="word2">Paradises</span>
+            </div>
+            <img class="logo" src="images/logo.png" alt="logo">
+            <div class="navbar-list">
+                <div class="navbar1">
+                    <a href="index.html" class="nav-items">Home</a>
+                    <a href="places.html" class="nav-items">Places</a>
+                    <a href="login.html" class="nav-items active">Login</a>
+                </div>                 
+            </div>
+        </header>
+        <main class="main1">
+            <div class="container1">
+                <div class="title1">Registration</div>
+                <div class="content1">
+                  <form action="welcome2.html" id="signupForm" method="post">
+                    <div class="user-details">
+                      <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" name="name" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your username" name="username" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" name="email" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your number" name="mobile" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="Enter your password" name="password" id="password" required>
+                      </div>
+                      <div class="input-box checkMatch">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" placeholder="Confirm your password" class="confirmP" id="confirmPassword" required>
+                      </div>
+                    </div>
+                    <div class="button1">
+                      <input type="submit" value="Register">
+                    </div>
+                  </form>
+                </div>
+                <script>
+                  document.getElementById('signupForm').addEventListener('submit', function (e) {
+                  e.preventDefault(); // Prevent the default form submission
+
+                  // Get the values from the password and confirm password fields
+                  const password = document.getElementById('password').value;
+                  const confirmPassword = document.getElementById('confirmPassword').value;
+                    
+                  // Check if the passwords match
+                  if (password === confirmPassword) {
+                    // Passwords match
+                    document.getElementById('confirmPassword').style.border = "1px solid #136b11";
+                    document.getElementById('confirmPassword').style.borderBottomWidth = "2px";
+                    this.submit();
+                  } else {
+                    // Passwords do not match
+                    document.getElementById('confirmPassword').value = "";
+                    document.getElementById('confirmPassword').placeholder = "Passwords do not match";
+                    document.getElementById('confirmPassword').style.border = "2px solid red";
+                  }
+                });
+                  document.getElementById('confirmPassword').addEventListener('input', function () {
+                  const password1 = document.getElementById('password').value;
+                  const confirmPassword1 = document.getElementById('confirmPassword').value;
+                  if (password1 === confirmPassword1) {
+                    document.getElementById('confirmPassword').style.border = "1px solid #136b11";
+                    document.getElementById('confirmPassword').style.borderBottomWidth = "2px";
+                  } else {
+                    confirmPassword.style.border = '2px solid red';
+                  }
+                });
+                </script>
+            </div>
+        </main>
+    </body>
+</html>
