@@ -288,15 +288,17 @@ footer h3{
       color: white;
     }
     .desc{
+      width: 100% !important;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: row;
+      background: linear-gradient(90deg, rgb(13, 218, 74) 0%, rgb(28, 169, 12) 50%, rgba(255,255,255,0) 100%);
     }
     .about-us{
       margin-top: 50px;
-      width: 600px; 
-      margin-right: 200px;
+      width: 500px;
+      margin-right: 150px;
     }
     .about-us > h1{
       color: var(--bs-mygreen);
