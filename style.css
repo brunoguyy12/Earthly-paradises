@@ -288,12 +288,24 @@ footer h3{
       color: white;
     }
     .desc{
+      margin-top: 50px;
       width: 100% !important;
+      background: url('images/about2.jpg');
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+    }
+    .text-container {
+      background: rgba(0, 0, 0, 0.301); /* Adjust the opacity here (0.5 means 50% opacity) */
+      color: #fff; /* Text color */
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: row;
-      background: linear-gradient(90deg, rgb(13, 218, 74) 0%, rgb(28, 169, 12) 50%, rgba(255,255,255,0) 100%);
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+      text-align: center;
     }
     .about-us{
       margin-top: 50px;
