@@ -867,3 +867,29 @@ footer h3{
     font-weight: 600;
     text-align: center;
   }
+@media only screen and (max-width: 768px) {
+  .slogan::before,
+  .slogan::after {
+    display: none;
+  }
+  .goodText p span {
+    margin-left: 0;
+  }
+  .eventDisplay1 {
+    height: auto;
+  }
+  .eachCard1 {
+    height: auto;
+  }
+  .eachCard1 img {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* CSS rules for header on smaller screens */
+  header {
+    /* Example rule */
+    font-size: 16px;
+    height: 70px;
+  }
+}
