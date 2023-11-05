@@ -74,6 +74,19 @@
                 <span class="visually-hidden">Next</span>
               </button>
         </div>
+        <div class="">
+            <div class="text-center p-4">
+                <p class="slogan">Your Gateway to the Enchanting Beauty of Zambia and the Hidden Gems of Burundi</p>
+            </div>
+            <div class="row">
+                <div class="col-8">
+
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+        </div>
         <div class="desc">
             <div class="text-container">
                 <div class="about-us">
@@ -83,7 +96,7 @@
                             As your premier tourism guide, we are passionate about sharing the vibrant cultures, breathtaking landscapes, and unique experiences that these two incredible countries have to offer. 
                             With our expert knowledge and extensive network, we provide you with personalized <em>itineraries</em>, ensuring your journey is filled with <em>unforgettable adventures</em>, from the majestic <em>Victoria Falls</em> in Zambia to the <em>pristine beaches</em> of Burundi's <em>Lake Tanganyika</em>. 
                             Whether you seek thrilling safaris, rich cultural encounters, or tranquil getaways, we are here to make your exploration of Zambia and Burundi a seamless and extraordinary experience.
-                        </p>
+                    </p>
                 </div>
                 <div class="services">
                         <h1>Our Services</h1>
@@ -121,4 +134,34 @@
             </footer>
         </div>
     </body>
+    <script>
+        var text = document.querySelector('.slogan');
+        var displayedText = text.textContent;
+        /*var beforeSlogan = window.getComputedStyle(text, '::before');
+        var afterSlogan = window.getComputedStyle(text, '::after');
+        beforeSlogan.content = '';
+        afterSlogan.content = '';*/
+        text.textContent= "";
+        let i = 0; 
+        function typeText(){
+            if (i < displayedText.length){
+                //beforeSlogan.content = '';
+                text.innerHTML += displayedText.charAt(i);
+                i++;
+                setTimeout(typeText, 100);
+                /*if(i == displayedText.length){
+                    afterSlogan.content = '';
+                    setTimeout(typeText, 200);
+                }*/
+            }
+            else{
+                text.innerHTML = "";
+                //beforeSlogan.content = '';
+                //afterSlogan.content = '';
+                i=0;
+                setTimeout(typeText, 1000);
+            }
+        }
+        typeText(); 
+    </script>
 </html>

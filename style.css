@@ -124,7 +124,7 @@ footer h3{
   color: inherit;
 }
 
-.navbar1 .nav-items a:hover{
+.navbar1 .nav-items:hover:not(:last-child){
   color: var(--bs-mygreen);
 }
 .active{
@@ -288,7 +288,7 @@ footer h3{
       color: white;
     }
     .desc{
-      margin-top: 50px;
+      margin-top: 20px;
       width: 100% !important;
       background: url('images/about2.jpg');
       background-repeat: no-repeat;
@@ -730,4 +730,54 @@ footer h3{
   .placeCountry img{
     width: 300px;
     height: 275px; 
+  }
+  .myPlace{
+    height: 400px;
+  }
+  .myPlace:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    background-color: #04ff0050;
+  }
+  .objCov{
+    object-fit: cover;
+  }
+  .slogan{
+    font-size: 35px;
+    font-family: Poppins sans-serif;
+    color: var(--impTxt);
+    font-style: italic;
+    font-weight: 200; 
+  }
+  .slogan:hover{
+    color: var(--bs-mygreen);
+  }
+  .slogan::before{
+    display: inline-block;
+    content: open-quote;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: transparent;
+    margin-right: 10px;
+    padding-right: 5px;
+    text-align: center;
+  }
+  .slogan:hover::before{
+    color: white;
+    background-color: var(--bs-mygreen);
+  }
+  .slogan::after{
+    display: inline-block;
+    content: close-quote;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: transparent;
+    margin-left: 10px;
+    padding-right: 5px;
+    text-align: center;
+  }
+  .slogan:hover::after{
+    color: white;
+    background-color: var(--bs-mygreen);
   }
