@@ -8,9 +8,13 @@
     --cardColor: #f6f6f6;
 
 }
-*::selection{
+*::selection:not(em){
     background-color: var(--bs-mygreen);
     color: white;
+}
+em::selection{
+    background-color: white;
+    color: var(--bs-mygreen);
 }
 body{
     margin: 0;
@@ -208,7 +212,7 @@ footer h3{
       display: flex;
       align-items: center;
       flex-direction: row;
-      margin-top: 80px;  
+      margin-top: 25px; 
       margin-bottom: 50px; 
       justify-content: space-evenly;
     }
@@ -288,7 +292,6 @@ footer h3{
       color: white;
     }
     .desc{
-      margin-top: 20px;
       width: 100% !important;
       background: url('images/about2.jpg');
       background-repeat: no-repeat;
@@ -296,7 +299,7 @@ footer h3{
       background-position: center;
     }
     .text-container {
-      background: rgba(0, 0, 0, 0.301); /* Adjust the opacity here (0.5 means 50% opacity) */
+      background: rgba(0, 0, 0, 0.406); /* Adjust the opacity here (0.5 means 50% opacity) */
       color: #fff; /* Text color */
       display: flex;
       align-items: center;
@@ -308,29 +311,41 @@ footer h3{
       text-align: center;
     }
     .about-us{
-      margin-top: 50px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px; 
+      margin-top: 70px;
       width: 500px;
       margin-right: 150px;
+      text-shadow: 0 0 1px white;
     }
     .about-us > h1{
-      color: var(--bs-mygreen);
+      color: var(--bs-myblue);
       text-align: center;
       margin-bottom: 25px;
     }
     .about-us > p{
       text-align: justify;  
     }
-    .about-us p::first-line {
-      margin-left: 10px;
+    .about-us > p::first-line {
+      margin-left: 100px;
     }
     .about-us>p em{
-      color: var(--bs-mygreen);
+      color: var(--bs-myblue);
       font-weight: bold;
     }
+    .services{
+      margin-top: -50px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;   
+      text-shadow: 0 0 1px white;
+    }
     .services > h1{
-      color: var(--bs-mygreen);
+      color: var(--bs-myblue);
       text-align: center;
       margin-bottom: 25px;
+    }
+    .services > ul li {
+      text-align: left;
     }
     .login-box {
       position: absolute;
@@ -744,12 +759,13 @@ footer h3{
   .slogan{
     font-size: 35px;
     font-family: Poppins sans-serif;
-    color: var(--impTxt);
+    color: var(--bs-mygreen);
     font-style: italic;
     font-weight: 200; 
   }
   .slogan:hover{
     color: var(--bs-mygreen);
+    font-weight: bold;
   }
   .slogan::before{
     display: inline-block;
@@ -780,4 +796,74 @@ footer h3{
   .slogan:hover::after{
     color: white;
     background-color: var(--bs-mygreen);
+  }
+  .imgDesc{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 80px;
+  }
+  .goodText{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--impTxt);
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  .goodText p span{
+    margin-left: 30px;
+  }
+  .events{
+    background: #151515;
+    padding: 50px 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+  }
+  .events > h1{
+    text-align: center;
+    color: var(--bs-myblue);
+  }
+  .eventDisplay1{
+    width: 100%;
+    height: 450px;
+    padding: 30px;
+    position: relative;
+    background-color: var(--cardColor);
+    border-radius: 15px;
+    box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: 0.3s ease;
+
+  }
+  .eventName1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--bs-mygreen);
+    margin-bottom: 10px;
+  }
+  .eachCard1{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .eachCard1 img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .see{
+    margin-top: 50px;
+    font-size: 30px;
+    color: var(--impTxt);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
   }
