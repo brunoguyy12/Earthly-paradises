@@ -1,4 +1,8 @@
 # Earthly-paradises
 
-This is a Project of a website
+This is a Project of a website.
 I have added all the files in the project now.
+
+![about Image](/images/about.jpg)
+
+Welcome to **Earthly Paradises**
